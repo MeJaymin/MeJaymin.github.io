@@ -9,11 +9,6 @@ use Facebook\WebDriver\Firefox\FirefoxDriver;
 use Facebook\WebDriver\Remote\LocalFileDetector; 
 require_once('vendor/autoload.php');
 
-$time = microtime();
-$time = explode(' ', $time);
-$time = $time[1] + $time[0];
-$start = $time;
-
 $browser_name  = $_POST['browser_name'];
 
 if($browser_name == 'chrome')
